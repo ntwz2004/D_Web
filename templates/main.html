@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Main</title>
+    
+  </head>
+
+  <ul id="nav">
+    <li class="nav-link">
+      <a href="{{ url_for('search') }}">
+        <h1 data-name="Search">Search</h1>
+      </a>
+    </li>
+    <li class="nav-link">
+      <a href="{{ url_for('add') }}">
+        <h1 data-name="Add">Add</h1>
+      </a>
+    </li>
+    <li class="nav-link">
+      <a href="{{ url_for('logout') }}">
+        <h1 data-name="Logout">Logout</h1>
+      </a>
+    </li>
+  </ul>
+  
+  
+  </html>

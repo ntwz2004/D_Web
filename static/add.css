@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    font-family: 'Staatliches', cursive;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 80px auto; /* ขยับฟอร์มลง */
+    padding: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* ระยะห่างจากหัวข้อ */
+    color: #1abc9c; /* สีของหัวข้อ */
+}
+
+label {
+    display: block; /* ทำให้ label เป็น block element */
+    margin-left: 20px; /* ระยะห่างด้านล่างของ label */
+}
+
+.form-group,
+.diagnosis-group {
+    margin-bottom: 20px; /* Space between form groups */
+    display: flex; /* ใช้ flexbox สำหรับ layout */
+    align-items: center; /* Align items vertically */
+}
+
+.form-group label,
+.diagnosis-group label {
+    width: 150px; /* ความกว้างสำหรับ labels */
+    margin-right: -20px; /* เพิ่มระยะห่างระหว่าง label และ input */
+    font-weight: 600; /* ตัวหนา */
+}
+
+.form-group input,
+.form-group select,
+.diagnosis-group input {
+    flex: 1; /* ให้ฟิลด์ใช้ความกว้างทั้งหมด */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ddd; /* Border style */
+    border-radius: 4px; /* มุมโค้ง */
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.diagnosis-group input {
+    flex: 1; /* ให้ฟิลด์ใช้ความกว้างทั้งหมด */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ddd; /* Border style */
+    border-radius: 4px; /* มุมโค้ง */
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.diagnosis-group input:focus {
+    border-color: #1abc9c; /* เปลี่ยนสีขอบเมื่อ focus */
+}
+
+/* กล่องจัดตำแหน่งปุ่ม */
+.button-container {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+    margin-top: 20px;
+}
+
+/* ปุ่ม Add Patient */
+button[type="submit"],
+.reset-button {
+    background-color: #1abc9c; /* สีพื้นหลังปุ่ม Add */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    width: 150px; /* กำหนดความกว้างปุ่มให้เท่ากัน */
+    text-align: center;
+}
+
+/* สีของปุ่ม Add เมื่อ hover */
+button[type="submit"]:hover {
+    background-color: #16a085; /* สีเขียวเข้มขึ้นเมื่อ hover */
+}
+
+/* ปุ่ม Reset */
+.reset-button {
+    background-color: #e74c3c; /* สีแดง */
+}
+
+/* สีของปุ่ม Reset เมื่อ hover */
+.reset-button:hover {
+    background-color: #c0392b; /* สีแดงเข้มขึ้นเมื่อ hover */
+}
+
+
+/* ปุ่ม Add (+) */
+.add-button, .remove-button {
+    background-color: #1abc9c; /* สีฟ้า สำหรับ Add */
+    color: white;
+    border: none;
+    padding: 6px 3px; /* ขนาดของปุ่ม */
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* ระยะห่างเล็กน้อย */
+    min-width: 40px; /* ความกว้างขั้นต่ำ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* สีของปุ่มเมื่อ hover */
+.add-button:hover {
+    background-color: #16a085; /* สีฟ้าเข้ม */
+}
+
+.remove-button {
+    background-color: #e74c3c; /* สีแดง สำหรับ Remove */
+}
+
+.remove-button:hover {
+    background-color: #c0392b; /* สีแดงเข้ม */
+}
+
+
+
+
+
+
+
+
+
+
